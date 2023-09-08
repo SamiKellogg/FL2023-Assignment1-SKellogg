@@ -1,10 +1,69 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <style>
+        body {
+            background-color: #333; /* Choose your background color */
+            color: #fff; /* Text color contrasting with the background */
+            text-align: center;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #Title {
+            font-size: 36px;
+        }
+
+        #CoverArt {
+            border-radius: 50%; /* Makes the image circular */
+            max-width: 300px;
+        }
+
+        #Rating {
+            font-size: 24px;
+        }
+
+        #Trailer {
+            width: 560px; /* You can adjust the width as needed */
+            height: 315px; /* You can adjust the height as needed */
+        }
+
+        #Summary {
+            font-size: 18px;
+        }
+
+        #Actors {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            #Actors li {
+                margin: 5px 0;
+            }
+    </style>
 </head>
 <body>
-
+    <div id="container">
+        <h1 id="Title">Cars</h1>
+        <img id="CoverArt" src="cars.jpg" alt="Cover Art">
+        <h5 id="Rating">IMDB Rating: 7.2/10</h5>
+        <iframe width="729" height="410" src="https://www.youtube.com/embed/W_H7_tDHFE8" title="Cars (2006) Trailer #1 | Movieclips Classic Trailers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p id="Summary">On the way to the biggest race of his life, a hotshot rookie race car gets stranded in a rundown town and learns that winning isn't everything in life..</p>
+        <ul id="Actors">
+            <li>Owen Wilson</li>
+            <li>Bonnie Hunt</li>
+            <li>Paul Newman</li>
+        </ul>
+        <a href="https://www.imdb.com/title/tt0317219/">IMDB Page</a>
+    </div>
 </body>
 </html>
